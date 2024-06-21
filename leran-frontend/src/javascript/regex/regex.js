@@ -117,6 +117,7 @@ import React from 'react'
 // const input = "b5" //false
 // const input = "bcdededede5" //false
 // const input = "abcde5" //true
+
 // $/
 // const pattern = /[a-e]{2,5}[0-5]$/
 // const input = "abcde5" //true
@@ -130,32 +131,84 @@ import React from 'react'
 // const input = "aabfde5" //false
 // const input = "aabde5" //true
 
-const pattern = /^[a-e]{3,5}[0-5]$/
+// const pattern = /^[a-e]{3,5}[0-5]$/
 // const input = "aabde5" //true
 // const input = "aabde7" //false
 // const input = "aabdea5" //false
 // const input = "aabdea5" //false
-const input = "aabfea5" //false 
+// const input = "aabfea5" //false
 
+// const pattern = /[a-e]{3,5}[0-5]$/
+// const input = "aabfde5" //false
+// const input = "aabde5" //true
+// const input = "azabde5" //true
+// const input = "aazbde5" //true
+// const input = "aazde5" //false
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const pattern = /^[a-e]{1,5}[0-5]/
+// /^$/
+// const pattern = /^[a-e]{1,5}[0-5]$/
 // const input = "lb5" //false
-// const input = "lb5" //false
+// const input = "baacda5" //false
+// const input = "baacd5" //true
+
+// or condition |
+// const pattern = /[a-e]{1,5}[0-5]|[7-8]/
+// const input = "lb5" //true
+// const input = "lb6" //false
+// const input = "ld7" //true work with or condition
+// const pattern = /^[a-e]{1,5}[0-5]|[7-8]/
+// const input = "b59" //true  work with or condition
+// const input = "1b57" //true  work with or condition
+// const input = "1b59" //false  work with or condition
+
+//() condition
+// const pattern = /[a-e]{1,5}[0-5]|[7-8]/
+// const input = "lb5" //true
+// const input = "lb6" //false
+// const input = "ld57" //true
+// const input = "ld50" //true any one match
+// const input = "ld59" //true any one match
+// const input = "ld69" //false any one match
+// const input = "lf58" //true any one match
+
+
+// const pattern = /^(([a-e]{1,5}[0-5])|[7-8])/
+// const input = "ld57" //false
+// const input = "d59" //true
+// const input = "d69" //false
+// const input = "8f7" //true
+
+const pattern = /^(([a-e]{1,5}[0-5])|[7-8])/
+const input = "8f7" //true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
