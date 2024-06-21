@@ -8,12 +8,14 @@ import UseCallbackMethod2 from './reactHookes/useCallback/method2/main'
 import UseMemoHook from './reactHookes/useMemo';
 import UseRefHook from './reactHookes/useRef/useRefHook';
 import HocMethod1 from './reactHookes/Hoc/method1/main';
-import HocMethod2 from './reactHookes/Hoc/method2/main'
+import HocMethod2 from './reactHookes/Hoc/method2/main';
+import LifeCycle from './componentLifeCyle/lifeCycle';
+import UseEffectHook from './reactHookes/useEffectHook';
+
+//import javascript
 import ArrayMethod from './javascript/array'
 import CallBackHell from './javascript/callbackhell/callbackhell';
-import UseEffectHook from './reactHookes/useEffectHook';
-import LifeCycle from './componentLifeCyle/lifeCycle';
-
+import Regex from './javascript/regex/regex';
 //
 import Register from './user/register';
 import UserDetails from './user/userDetails'
@@ -39,7 +41,8 @@ function App() {
 
         {/* javascript methods */}
         <Route path="/arrayMethod" exact element={< ArrayMethod />}></Route>
-        <Route path="/callBackHell" exact element={< CallBackHell />}></Route>
+        {/* <Route path="/callBackHell" exact element={< CallBackHell />}></Route> */}
+        <Route path="/regex" exact element={< Regex />}></Route>
 
 
         {/* User  */}
