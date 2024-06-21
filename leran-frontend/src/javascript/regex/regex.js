@@ -126,6 +126,7 @@ import React from 'react'
 // const input = "aabc de5" //true
 // const input = "aabc de 5" //false
 
+<<<<<<< HEAD
 // const pattern = /[a-e]{3,5}[0-5]$/
 // const input = "aabfde5" //false
 // const input = "aabde5" //true
@@ -140,6 +141,11 @@ const input = "aabfea5" //false
 
 
 
+=======
+const pattern = /[a-e]{3,5}[0-5]$/
+// const input = "aabfde5" //false
+const input = "aabde5" //true
+>>>>>>> df5b87d772549899465b6a9f4930ac85e70f941a
 
 
 
