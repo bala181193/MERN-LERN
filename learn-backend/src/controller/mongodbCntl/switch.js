@@ -77,4 +77,16 @@ export const switchAggregation = async () => {
         console.log(err)
     }
 }
+
+
+
+const sample = () => {
+    console.log("aaaaaaaa")
+}
+//sample()
+
+
+
+
+
 // switchAggregation()
