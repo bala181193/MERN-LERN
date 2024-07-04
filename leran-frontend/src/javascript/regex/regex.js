@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+
+//
 
 //a-z
 // const pattern = /[a-z]/
@@ -53,7 +55,6 @@ import React from 'react'
 // const input = "Te7st" //true //pakathil
 // const input = "Tes7t" //false
 
-
 // /[a-z]+[0-9]/
 
 // const pattern = /[a-z]+[0-9]/
@@ -81,7 +82,6 @@ import React from 'react'
 // const input = "sssss" //false
 // const input = "9" //true
 
-
 // const pattern = /[c-f]{1}[0-9]/
 // const input = "ccccc0" //true
 // const input = "ccccg0" //false
@@ -101,7 +101,6 @@ import React from 'react'
 // const input = "abfdcaede5" //true
 // const input = "abfdcaedef5" //false
 // const input = "c4" //false
-
 
 // const pattern = /[a-e]{2,}[0-9]/
 // const input = "ffcfc5" //false
@@ -127,10 +126,11 @@ import React from 'react'
 // const input = "aabc de5" //true
 // const input = "aabc de 5" //false
 
-
-// const pattern = /[a-e]{3,5}[0-5]$/
+// const pattern = /[a-e]{3,5}[0-5]$/;
 // const input = "aabfde5" //false
 // const input = "aabde5" //true
+// const input = "aabdeeeeee5"; //true
+// const input = "abfabc5"; //true
 
 // const pattern = /^[a-e]{3,5}[0-5]$/
 // const input = "aabde5" //true
@@ -147,24 +147,13 @@ import React from 'react'
 // const input = "aazde5" //false
 
 // /^$/
-// const pattern = /^[a-e]{1,5}[0-5]$/
-
+// const pattern = /^[a-e]{3,5}[0-5]$/;
+// const input = "abcabc5"; //false
+// const input = "abc5"; //true
 
 // const pattern = /[a-e]{3,5}[0-5]$/
 // // const input = "aabfde5" //false
 // const input = "aabde5" //true
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const pattern = /^[a-e]{1,5}[0-5]/
 // const input = "lb5" //false
@@ -192,87 +181,66 @@ import React from 'react'
 // const input = "ld69" //false any one match
 // const input = "lf58" //true any one match
 
-
 // const pattern = /^(([a-e]{1,5}[0-5])|[7-8])/
 // const input = "ld57" //false
 // const input = "d59" //true
 // const input = "d69" //false
 // const input = "8f7" //true
 
-const pattern = /^(([a-e]{1,5}[0-5])|[7-8])/
-const input = "8f7" //true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log(pattern.test(input))
-
+//grouping with or condition
+// const pattern = /^(([a-e]{1,5}[0-5])|[7-8])/;
+// const input = "8f7"; //true
+
+// const pattern = /\d\$$/;
+// const input = "the petrol price is 5$"; //true
+
+// const pattern = / [a-z]+\d\$$/;
+// const input = "the petrol price is 5$"; //false
+
+// \s replace space
+// const pattern = /\s[a-z]+\d\$$/; //
+// const input = "the petrol price is balamurugan5$"; //true
+
+// [a-z]replace \w
+// const pattern = /\s\w{1,4}\d\$$/; //
+// const input = "the petrol price is balamurugan5$"; //true
+// const input = "the petrol price is balamurugan$"; //false
+// const input = "the petrol price is bala5$"; //true
+// const input = "the petrol price is balamurugan5$"; //false
+
+// const pattern = /\s\w{1,4}\d\$$/;
+// const input = "abcfbcc5"; //true
+// const input = "the petrol price  balamurugan5$"; //false
+// const input = "the petrol price  balamur ugan5$"; //true
+
+//boundary \b
+// const pattern = /\bmurugan\b/;
+// const input = "my name is balamurugan"; //false
+// const input = "my name is bala murugan"; //true
+// const pattern = /murugan/;
+// const input = "my name is balamurugan"; //true
+
+// negative scenario
+// \S
+// const pattern = /\S/;
+// const input = "my name is balamurugan"; //true
+// const input = "my "; //true
+// const input = " "; //false
+
+//\W
+
+const pattern = /\W/;
+// const input = "my name is balamurugan"; //true //reason i have space except word
+// const input = "Balamurugan"; //false
+// const input = "Bala_murugan"; //false
+// const input = "Bala_murugan$"; //true
+// const input = "Balamurugan_"; //false
+const input = "Balamurugan-"; //true
+
+console.log(pattern.test(input));
 
 function Regex() {
-    return (
-        <h1>REGEX </h1>
-    )
+  return <h1>REGEX </h1>;
 }
 
-export default Regex
+export default Regex;
