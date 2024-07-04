@@ -127,6 +127,7 @@ import React from 'react'
 // const input = "aabc de5" //true
 // const input = "aabc de 5" //false
 
+
 // const pattern = /[a-e]{3,5}[0-5]$/
 // const input = "aabfde5" //false
 // const input = "aabde5" //true
@@ -147,6 +148,26 @@ import React from 'react'
 
 // /^$/
 // const pattern = /^[a-e]{1,5}[0-5]$/
+
+
+// const pattern = /[a-e]{3,5}[0-5]$/
+// // const input = "aabfde5" //false
+// const input = "aabde5" //true
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const pattern = /^[a-e]{1,5}[0-5]/
+// const input = "lb5" //false
 // const input = "lb5" //false
 // const input = "baacda5" //false
 // const input = "baacd5" //true
