@@ -1,0 +1,141 @@
+nvm use <version>
+nvm install <version>
+npx kill-port 3000
+gerrit userName:balamurugan
+gerrit password: LOqDZJ4GF6nTmjbDyAPXmQxDO5F2N5pY0sgjbkRomg
+git config --global user.email "balamurugan@digisenz.com"
+tsc.cmd --watch
+npm cache clean --force
+git pull 
+git checkout -b subscription --> new branch creation
+git branch --set-upstream-to=origin/master suscription
+git add .
+git commit -m ""
+
+1)then go to master branch git checkout master 
+2)git pull
+
+git checkout suscription 
+git pull --rebase 
+git push origin HEAD:new-plazeo-branch --force  
+
+git push origin HEAD:(branch) --force
+
+ 
+
+git reset --soft HEAD~1
+git push origin HEAD:refs/for/master
+git commit --amend --no-edit
+git branch -D <branchname>
+
+http://demodashboard.plazeo.io/ -> pepper demo
+https://dashboard.plazeo.io/ -> pepper prod
+
+Change-Id: I0e3d150c74547facdbb20008530ef3bd76bcef56
+
+
+
+8714699302 perplexity.ai
+
+
+
+8438196530 -> devanthiran
+mongodb :
+1)$cond
+2)$ifNull
+3)$arrayElemAt
+4)$switch
+5)$facet
+6)pipeline
+7)$exp
+8)$exists
+9)$addFields
+10)$reduce
+11)$concat
+12)$map
+13)multiply
+14)$add
+15)$mergeObjects
+16)$ifNull
+17௰concatArrays
+18)$replaceRoot
+19)$element
+20)$dayOfYear
+21)$sum
+22)$multiplay
+23) $setWindowFields
+24)$$ROOT
+25 "$dayOfWeek","$hour",$month,$year
+26)$first
+27)$replaceRoot
+28)$objectToArray
+29)$exists,$in
+30)$sort,$skip,$limit
+31)$sum,$substr,$add,$divide,$ceil,$abs,
+32)$push
+33)"$expr"
+34)$eq
+35)$subtract,$ceil,$divide
+36)$concat
+37)"$substr
+38)$dayOfMonth,
+39)$unset,
+49)$ne,
+50)$first,$last
+51){ $unwind: { path: '$credits' } },
+52$let
+52)$setWindowFields,$bucketAuto
+53)$range
+54)$addToSet
+55)$each 
+56)$literal
+
+
+
+
+100)mongoose paginate 
+
+200) watch keepCoding channel for javascript
+
+const search = window.location.search;
+const params = new URLSearchParams(search);
+const userId = params.get('userId'); 
+mongodb 
+https://mongoplayground.net/p/zq0SZVK5pv5
+javascript compiler
+https://onecompiler.com/javascript        
+
+loadash:
+1)_.omit
+2)_map
+
+
+
+1)$expr
+2)$facet
+3)$ifNull
+4)$exsit,$in,$ne,$eq
+5)$cond,$switch
+6)$switch
+7)$arrayElemAt($slice,$first,$last,)
+8)map,reduce,$each (used in push)
+9)replaceroot,mergeObject
+10)$$ROOT
+11)$push,pop(last element remove),pull,$addToset(avoid duplicate push value into aray)
+12)$exists
+13)$regex
+
+$arrayElemAt($slice,$first,$last,)  $map $reduce concatArrays $$ROOT $push $replaceRoot $mergeObjects $element $mergex
+
+https://designtechworld.medium.com/json-web-token-jwt-and-passport-js-a5361c9a563
+https://demos.pixinvent.com/vuexy-nextjs-admin-template/documentation/docs/guide/overview/
+
+https://designtechworld.medium.com/json-web-token-jwt-and-passport-js-a5361c9a563
+
+myInstaId:
+acc1 : 7397636240 userName:bala_murugan_1118
+pwd: bala181193@s
+acc2 :ba181193la@gmail.com email pwd:bala181193@N
+pwd:bala181193@S 
+
+9444842379 ntk idhaya raj

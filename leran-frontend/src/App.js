@@ -16,6 +16,7 @@ import UseEffectHook from './reactHookes/useEffectHook';
 import ArrayMethod from './javascript/array'
 import CallBackHell from './javascript/callbackhell/callbackhell';
 import Regex from './javascript/regex/regex';
+import ClassLearn from './javascript/class/class'
 //
 import Register from './user/register';
 import UserDetails from './user/userDetails'
