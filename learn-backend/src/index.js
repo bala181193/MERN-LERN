@@ -25,10 +25,6 @@ app.use('/authApi', authRouter)
 app.use('/mongoDbAuth', mongodbRoute)
 
 
-
-
-
-
-app.listen(2001, () => {
-    console.log("2001 running");
+app.listen(5001, () => {
+    console.log("5001 running");
 })

@@ -778,7 +778,9 @@ export const objectToArray = async () => {
     }
 }
 
-objectToArray()
+
+
+// objectToArray()
 // elementMatch()
 // addToset()
 // pop()
@@ -790,3 +792,15 @@ objectToArray()
 // fisrtAggregation()
 // arrayElement()
 // slice()
+
+// {
+//     $set:{
+//       "products.productDetails.productImage":{
+//         $cond: {
+//           if: { $eq: ["$products.productDetails.productImage", { $arrayElemAt: [ "$gallery._id",0]}] },
+//           then: { $arrayElemAt: [ "$gallery.galleryImage",0]},
+//           else: null
+//         }
+//       }
+//     }
+//   },
